@@ -7,7 +7,8 @@ PREFIX = '/usr/local/include/jupyter'
 
 INCLUDE_OPENCV_FILE_NAME = 'jupyter_opencv_include.h'
 
-INCLUDE_PATH = """
+INCLUDE_PATH = '#pragma cling add_library_path("/usr/local/lib")'
+"""
 #pragma cling add_library_path("/usr/local/lib")
 #pragma cling add_include_path("/usr/local/include/opencv4/")
 #pragma cling add_include_path("/usr/local/include/")
